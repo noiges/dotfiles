@@ -1,0 +1,9 @@
+[user]
+  name = Tobias Noiges
+  email = tobias@noig.es
+[color]
+  ui = true
+[core]
+  exludesfile = '~/.gitignore_global'
+[github]
+  user = noiges
