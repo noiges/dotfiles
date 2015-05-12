@@ -1,0 +1,32 @@
+#!/bin/bash
+
+set -e
+
+function symlink_files {
+  echo Symlinking files...
+
+  DIR=$(cd $(dirname $0)/../files && pwd)
+
+  for file in $(ls $DIR); do
+    SRC=$DIR/$file
+    DEST=~/.$file
+    echo $DEST
+    ln -f -s $SRC $DEST
+  done
+
+  echo done.
+}
+
+function install_vundle {
+  if [[ ! -a ~/.vim/bundle/Vundle.vim ]]; then
+    echo Installing Vundle and Plugins...
+    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    vim +PluginInstall +qall
+    echo done.
+  else
+    echo Vundle already installed, done.
+  fi
+}
+
+symlink_files
+install_vundle
