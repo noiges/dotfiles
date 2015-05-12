@@ -45,7 +45,7 @@ set wildignore+=*~,*/log/*.log,*/tmp/*,*/coverage/*.html,*/.sass-cache/*,public/
 " Solarized
 syntax enable
 set background=dark
-colorscheme solarized
+silent! colorscheme solarized
 
 " Source the vimrc file after writing buffer
 if has("autocmd")
