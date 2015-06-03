@@ -8,19 +8,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# Configuration files
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
-alias vimconfig="vim ~/.vimrc"
-alias tmuxconfig="vim ~/.tmux.conf"
-
-# Git
-alias gt="git checkout --track"
-alias gaa="git add --all"
-alias gf="git fetch"
-
-# Rails
-alias be="bundle exec"
+# Source alias files
+for file in ~/.alias_*; do
+  source "$file"
+done
 
 # Path
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
