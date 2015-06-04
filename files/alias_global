@@ -3,6 +3,7 @@ alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias vimconfig="vim ~/.vimrc"
 alias tmuxconfig="vim ~/.tmux.conf"
+alias gitconfig="vim ~/.gitconfig"
 
 # Git
 alias gt="git checkout --track"

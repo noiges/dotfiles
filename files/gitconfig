@@ -3,7 +3,14 @@
   email = tobias@noig.es
 [color]
   ui = true
+  branch = true
 [core]
-  exludesfile = '~/.gitignore_global'
+  exludesfile = ~/.gitignore_global
 [github]
   user = noiges
+[pull]
+  rebase = true
+[push]
+  default = simple
+[include]
+  path = ~/.gitconfig_local
