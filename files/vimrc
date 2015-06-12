@@ -17,6 +17,7 @@ Plugin 'mattn/webapi-vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'rking/ag.vim'
 Plugin 'Raimondi/delimitMate'
+Plugin 'ervandew/supertab'
 
 call vundle#end()
 filetype plugin indent on
