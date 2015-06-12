@@ -16,6 +16,7 @@ Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'rking/ag.vim'
+Plugin 'Raimondi/delimitMate'
 
 call vundle#end()
 filetype plugin indent on
