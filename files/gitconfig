@@ -8,8 +8,6 @@
   exludesfile = ~/.gitignore_global
 [github]
   user = noiges
-[pull]
-  rebase = true
 [push]
   default = simple
 [include]
