@@ -2,8 +2,9 @@
 Just my dotfiles.
 
 ## Prerequisites
-* git
-* vim
+```sh
+brew install vim tmux ctags ag reattach-to-user-namespace
+```
 
 ## Installation
 ```sh
