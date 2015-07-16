@@ -14,3 +14,7 @@
   default = simple
 [include]
   path = ~/.gitconfig_local
+[init]
+  templatedir = ~/.git_template
+[alias]
+  ctags = !.git/hooks/ctags
