@@ -95,3 +95,4 @@ map <Leader>f :Ag <cword><CR>
 
 " Custom statusline
 set statusline=\ %t\ %=%l:%c\ %y\ %m
+set laststatus=2
