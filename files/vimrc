@@ -40,6 +40,7 @@ set shiftwidth=2
 set expandtab
 set splitbelow
 set splitright
+set showcmd
 set wildignore+=*/vendor/**
 set wildignore+=*/bin/**
 set wildignore+=*~,*/log/*.log,*/tmp/*,*/coverage/*.html,*/.sass-cache/*,public/system/*,public/uploads/*,*/_site/*,*.jpg,*.jpeg,*.gif,*.png,*.pdf,*.mp3
