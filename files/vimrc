@@ -18,6 +18,7 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'rking/ag.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'ervandew/supertab'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
