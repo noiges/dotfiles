@@ -21,8 +21,8 @@ export EDITOR='vim'
 eval "$(rbenv init -)"
 
 # Chromium depot tools
-export PATH="$PATH:/opt/depot_tools"
-export DEPOT_TOOLS_UPDATE=0
+export PATH="$PATH:/usr/local/opt/depot_tools"
+export DEPOT_TOOLS_UPDATE=1
 
 # ADT
 export PATH="$PATH:/opt/adt/sdk/platform-tools"
