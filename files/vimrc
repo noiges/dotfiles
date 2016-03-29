@@ -89,8 +89,7 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
-let g:rspec_runner = "os_x_iterm"
-let g:rspec_command = "!bundle exec zeus rspec {spec}"
+let g:rspec_command = "!bin/rspec {spec}"
 
 " Ag
 map <C-f> :Ag 
