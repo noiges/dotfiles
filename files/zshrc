@@ -35,3 +35,7 @@ export DISABLE_LIVEMODE=false
 
 # Allow [ or ] whereever you want
 unsetopt nomatch
+
+export NVM_DIR="/Users/noiges/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+source ~/.nvm/nvm.sh
