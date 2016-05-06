@@ -6,7 +6,9 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+if [[ -a $ZSH/oh-my-zsh.sh ]]; then
+  source $ZSH/oh-my-zsh.sh
+fi
 
 # Source alias files
 for file in ~/.alias_*; do
@@ -18,7 +20,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 export EDITOR='vim'
 
 # rbenv
-eval "$(rbenv init -)"
+if [[ ! -x `which rbenv` ]]; then
+  eval "$(rbenv init -)"
+fi
 
 # Chromium depot tools
 export PATH="$PATH:/usr/local/opt/depot_tools"
@@ -36,6 +40,5 @@ export DISABLE_LIVEMODE=false
 # Allow [ or ] whereever you want
 unsetopt nomatch
 
-export NVM_DIR="/Users/noiges/.nvm"
+export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-source ~/.nvm/nvm.sh

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [[ ! -x `which brew` ]]; then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+brew upgrade
+
+brew update --all
+
+brew install vim
+brew install tmux
+brew install ctags
+brew install ag
+brew install reattach-to-user-namespace
+
+brew install rbenv
+brew install ruby-build
+
+brew cleanup
