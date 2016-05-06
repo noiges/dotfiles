@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sudo -v
+
+# Dark menu bar and dock 
+defaults write NSGlobalDomain AppleInterfaceStyle Dark
+
+# Finder
+# Show status bar
+# Snap files to grid
+# Show battery power in percent
+# Show drives on Desktop
