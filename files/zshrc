@@ -24,7 +24,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 export EDITOR='vim'
 
 # Initialize rbenv
-if [[ ! -x `which rbenv` ]]; then
+if [[ -x `which rbenv` ]]; then
   eval "$(rbenv init -)"
 fi
 
