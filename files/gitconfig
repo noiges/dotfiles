@@ -10,6 +10,8 @@
   user = noiges
 [push]
   default = current
+[pull]
+  rebase = true
 [include]
   path = ~/.gitconfig_local
 [init]
