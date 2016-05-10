@@ -2,11 +2,33 @@
 
 sudo -v
 
+# Menu bar
 # Dark menu bar and dock 
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
+# Show Bluetooth in menu bar
 
 # Finder
 # Show status bar
 # Snap files to grid
 # Show battery power in percent
 # Show drives on Desktop
+
+# Dock
+# Auto-hide 
+defaults com.apple.dock autohide true
+# Turn on magnification
+# Turn off re-arrangement of spaces based on most recent use
+# defaults write com.apple.dock mru-spaces -bool false
+
+# Users
+# Disable guest user
+
+# Safari
+# Turn on developer menu
+
+# Terminal
+# Set zsh as default shell
+
+# Photos
+# Don't open Photos if iPhone is connected
+# defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
