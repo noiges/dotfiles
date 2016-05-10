@@ -5,20 +5,30 @@ sudo -v
 # Menu bar
 # Dark menu bar and dock 
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
+# Show battery power in percent
+defaults write com.apple.menuextra.battery ShowPercent -bool true 
 # Show Bluetooth in menu bar
 
 # Finder
 # Show status bar
+defaults write com.apple.finder ShowPathbar -bool true
+# Show path bar
+defaults write com.apple.finder ShowStatusBar -bool true
 # Snap files to grid
-# Show battery power in percent
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+# Show all file extensions
+defaults write com.apple.finder AppleShowAllExtensions -bool true
+
 # Show drives on Desktop
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 
 # Dock
 # Auto-hide 
-defaults com.apple.dock autohide true
-# Turn on magnification
+defaults write com.apple.dock autohide -bool true
 # Turn off re-arrangement of spaces based on most recent use
-# defaults write com.apple.dock mru-spaces -bool false
+defaults write com.apple.dock mru-spaces -bool false
 
 # Users
 # Disable guest user
@@ -31,4 +41,4 @@ defaults com.apple.dock autohide true
 
 # Photos
 # Don't open Photos if iPhone is connected
-# defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
