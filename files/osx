@@ -36,6 +36,7 @@ defaults write com.apple.dock mru-spaces -bool false
 
 # Safari
 # Turn on developer menu
+defaults write com.apple.safari IncludeDevelopMenu true;
 
 # Terminal
 # Set zsh as default shell
