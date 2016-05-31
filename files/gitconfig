@@ -5,7 +5,7 @@
   ui = true
   branch = true
 [core]
-  exludesfile = ~/.gitignore_global
+  exludesfile = ~/.gitignore
 [github]
   user = noiges
 [push]
@@ -13,7 +13,7 @@
 [pull]
   rebase = true
 [include]
-  path = ~/.gitconfig_local
+  path = ~/.gitconfig.local
 [init]
   templatedir = ~/.git_template
 [alias]

@@ -13,7 +13,7 @@ if [[ -a $HOME/.oh-my-zsh ]]; then
 fi
 
 # Aliases
-for file in ~/.alias_*; do
+for file in ~/.alias*; do
   source "$file"
 done
 
@@ -32,6 +32,6 @@ fi
 unsetopt nomatch
 
 # Local configuration
-if [[ -a ~/.zshrc_local ]]; then
-  source ~/.zshrc_local
+if [[ -a ~/.zshrc.local ]]; then
+  source ~/.zshrc.local
 fi
