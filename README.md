@@ -1,12 +1,18 @@
 # dotfiles
 Just my dotfiles.
 
-## Prerequisites
+## Usage
+### Install brew dependencies
 ```sh
-brew install vim tmux ctags ag reattach-to-user-namespace
+./script/brew
 ```
 
-## Installation
+### Set Mac OS X defaults
 ```sh
-git clone git@github.com:nokinen/dotfiles.git && cd dotfiles && ./script/install
+./script/osx
+```
+
+### Symlink dotfiles
+```sh
+./script/symlink
 ```
