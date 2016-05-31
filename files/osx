@@ -2,10 +2,16 @@
 
 sudo -v
 
-# Menu bar
+# Global configuration
 
 # Dark menu bar and dock 
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
+
+# Fast key repeat
+defaults write NSGlobalDomain KeyRepeat -int 2
+
+# Short wait unitl key repeat
+defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
 # Show battery power in percent
 defaults write com.apple.menuextra.battery ShowPercent -bool true 
