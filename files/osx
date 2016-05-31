@@ -17,6 +17,9 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 12
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write NSGlobalDomain WebAutomaticSpellingCorrectionEnabled -bool false
 
+# Enable full keyboard access with tab
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
+
 # MENU BAR
 
 # Show battery power in percent
@@ -55,18 +58,10 @@ defaults write com.apple.dock autohide -bool true
 # Turn off re-arrangement of spaces based on most recent use
 defaults write com.apple.dock mru-spaces -bool false
 
-# USERS
-
-# Disable guest user
-
 # SAFARI
 
 # Turn on developer menu
 defaults write com.apple.safari IncludeDevelopMenu true;
-
-# TERMINAL
-
-# Set zsh as default shell
 
 # PHOTOS
 
