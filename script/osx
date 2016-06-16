@@ -63,6 +63,9 @@ defaults write com.apple.dock mru-spaces -bool false
 # Turn on developer menu
 defaults write com.apple.safari IncludeDevelopMenu true;
 
+# Show status bar
+defaults write com.apple.safari ShowOverlayStatusBar -bool true;
+
 # PHOTOS
 
 # Don't open Photos if iPhone is connected
