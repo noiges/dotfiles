@@ -7,12 +7,6 @@ sudo -v
 # Dark menu bar and dock 
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
 
-# Fast key repeat
-defaults write NSGlobalDomain KeyRepeat -int 2
-
-# Short wait unitl key repeat
-defaults write NSGlobalDomain InitialKeyRepeat -int 12
-
 # Disable spelling correction
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write NSGlobalDomain WebAutomaticSpellingCorrectionEnabled -bool false
@@ -79,3 +73,6 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # Calendar
 # Week starts on Monday
 defaults write com.apple.ical "first day of week" -int 1
+
+# 24 hours date format
+defaults write com.apple.menuextra.clock DateFormat -string "EEE HH:mm"
