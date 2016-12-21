@@ -6,23 +6,24 @@ if empty(glob("~/.vim/autoload/plug.vim"))
 endif
 
 call plug#begin('~/.vim/plugged')
-Plug 'gmarik/Vundle.vim'
-Plug 'derekwyatt/vim-scala'
 Plug 'altercation/vim-colors-solarized'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-Plug 'tomtom/tcomment_vim'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'derekwyatt/vim-scala'
+Plug 'ervandew/supertab'
+Plug 'gmarik/Vundle.vim'
+Plug 'mattn/emmet-vim'
 Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
-Plug 'thoughtbot/vim-rspec'
-Plug 'rking/ag.vim'
-Plug 'ervandew/supertab'
-Plug 'rust-lang/rust.vim'
-Plug 'mattn/emmet-vim'
+Plug 'ntpeters/vim-better-whitespace'
 Plug 'othree/yajs.vim'
+Plug 'rking/ag.vim'
+Plug 'rust-lang/rust.vim'
+Plug 'thoughtbot/vim-rspec'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 filetype plugin indent on
@@ -53,7 +54,7 @@ set wildignore+=*~,*/log/*.log,*/tmp/*,*/coverage/*.html,*/.sass-cache/*,public/
 " Solarized
 syntax enable
 set background=dark
-silent! colorscheme solarized
+colorscheme solarized
 
 " Key mappings
 let mapleader = ","
@@ -64,17 +65,6 @@ nmap <C-l> <C-W>l
 nmap - :Explore<CR>
 map ,, <C-^>
 nmap :Vex :Vex!
-
-" Trim trailing whitespace
-function! <SID>StripTrailingWhitespaces()
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    %s/\s\+$//e
-    let @/=_s
-    call cursor(l, c)
-endfunction
-autocmd BufWritePre *.rb,*.js,*.m,*.h,*.scala :call <SID>StripTrailingWhitespaces()
 
 " Gist
 let g:gist_clip_command = 'pbcopy'
@@ -90,7 +80,7 @@ map <Leader>a :call RunAllSpecs()<CR>
 let g:rspec_command = "!bin/rspec {spec}"
 
 " Ag
-map <C-f> :Ag 
+map <C-f> :Ag
 map <Leader>f :Ag <cword><CR>
 
 " Custom statusline
@@ -101,3 +91,6 @@ set laststatus=2
 set mouse=a
 
 autocmd QuickFixCmdPost *grep* cwindow
+
+" Strip whitespace on save
+let strip_whitespace_on_save = 1
