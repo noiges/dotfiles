@@ -50,6 +50,7 @@ set showcmd
 set wildignore+=*/vendor/**
 set wildignore+=*/bin/**
 set wildignore+=*~,*/log/*.log,*/tmp/*,*/coverage/*.html,*/.sass-cache/*,public/system/*,public/uploads/*,*/_site/*,*/build/*,*.jpg,*.jpeg,*.gif,*.png,*.pdf,*.mp3
+set belloff=all
 
 " Solarized
 syntax enable
