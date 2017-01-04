@@ -95,3 +95,6 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 " Strip whitespace on save
 let strip_whitespace_on_save = 1
+
+" Fast escape from visual mode
+set timeoutlen=1000 ttimeoutlen=0
