@@ -24,6 +24,8 @@ Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 call plug#end()
 
 filetype plugin indent on
@@ -96,3 +98,6 @@ let strip_whitespace_on_save = 1
 
 " Fast escape from visual mode
 set timeoutlen=1000 ttimeoutlen=0
+
+" Turn-on jsx highlighting for non-jsx files
+let g:jsx_ext_required = 0
