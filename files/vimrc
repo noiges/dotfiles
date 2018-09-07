@@ -101,3 +101,6 @@ set timeoutlen=1000 ttimeoutlen=0
 
 " Turn-on jsx highlighting for non-jsx files
 let g:jsx_ext_required = 0
+
+" Do not purge CTRL-P cache cross-sessions
+let g:ctrlp_clear_cache_on_exit = 0
