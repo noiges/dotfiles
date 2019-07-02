@@ -84,7 +84,7 @@ map <Leader>a :call RunAllSpecs()<CR>
 let g:rspec_command = "!bin/rspec {spec}"
 
 " Ack
-map <C-f> :Ack
+map <C-f> :Ack<Space>
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
