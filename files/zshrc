@@ -24,9 +24,6 @@ for file in ~/.alias*; do
   source "$file"
 done
 
-# Path
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
-
 # Set vim as default editor
 export EDITOR='vim'
 
