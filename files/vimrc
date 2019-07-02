@@ -17,7 +17,6 @@ Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'othree/yajs.vim'
-Plug 'rking/ag.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'thoughtbot/vim-rspec'
 Plug 'tomtom/tcomment_vim'
@@ -26,6 +25,7 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+Plug 'mileszs/ack.vim'
 call plug#end()
 
 filetype plugin indent on
@@ -80,9 +80,12 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 let g:rspec_command = "!bin/rspec {spec}"
 
-" Ag
-map <C-f> :Ag
-map <Leader>f :Ag <cword><CR>
+" Ack
+map <C-f> :Ack
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 " Custom statusline
 set statusline=\ %t\ %=%l:%c\ %y\ %m
