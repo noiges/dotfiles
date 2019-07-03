@@ -20,8 +20,9 @@ Just my dotfiles.
 ### Install vim plugins
 :PlugInstall
 
-### Install solarized terminal theme
-https://github.com/tomislav/osx-terminal.app-colors-solarized
+### Install OneDark terminal theme
+1. Import ~/.vim/plugged/onedark.vim/term/One\ Dark.terminal into Terminal.app
+2. Make background of Theme match OneDark's background in Vim
 
 ### Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
