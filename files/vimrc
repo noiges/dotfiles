@@ -94,8 +94,9 @@ set mouse=a
 
 autocmd QuickFixCmdPost *grep* cwindow
 
-" Strip whitespace on save
-let strip_whitespace_on_save = 1
+" Strip whitespace on save without confirmation
+let g:strip_whitespace_on_save = 1
+let g:strip_whitespace_confirm = 0
 
 " Fast escape from visual mode
 set timeoutlen=1000 ttimeoutlen=0
