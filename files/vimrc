@@ -21,6 +21,7 @@ Plug 'tpope/vim-surround'
 Plug 'mileszs/ack.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
+Plug '/usr/local/opt/fzf'
 call plug#end()
 
 filetype plugin indent on
@@ -60,6 +61,9 @@ nmap <C-l> <C-W>l
 nmap - :Explore<CR>
 map ,, <C-^>
 nmap :Vex :Vex!
+
+" Fzf
+nmap <C-t> :FZF<CR>
 
 " Gist
 let g:gist_clip_command = 'pbcopy'
