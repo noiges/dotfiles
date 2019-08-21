@@ -7,7 +7,6 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ervandew/supertab'
 Plug 'mattn/emmet-vim'
 Plug 'mattn/gist-vim'
@@ -105,9 +104,6 @@ set timeoutlen=1000 ttimeoutlen=0
 
 " Turn-on jsx highlighting for non-jsx files
 let g:jsx_ext_required = 0
-
-" Do not purge CTRL-P cache cross-sessions
-let g:ctrlp_clear_cache_on_exit = 0
 
 " OneDark color scheme
 let g:onedark_termcolors=16
