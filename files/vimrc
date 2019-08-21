@@ -69,6 +69,7 @@ silent! map <unique> <leader>F :GFiles?<CR>
 silent! map <unique> <leader>b :Buffers<CR>
 silent! map <unique> <leader>l :Lines<CR>
 silent! map <unique> <leader>h :Helptags<CR>
+silent! map <unique> <leader>g :Ag<CR>
 
 " Gist
 let g:gist_clip_command = 'pbcopy'
@@ -81,9 +82,6 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 let g:rspec_command = "!bin/rspec {spec}"
-
-" Ack
-map <C-f> :Ack<Space>
 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
