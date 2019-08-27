@@ -24,5 +24,10 @@ Just my dotfiles.
 1. Import ~/.vim/plugged/onedark.vim/term/One\ Dark.terminal into Terminal.app
 2. Make background of Theme match OneDark's background in Vim
 
-### Install oh-my-zsh
+### Fish
+`echo /usr/local/bin/fish | sudo tee -a /etc/shells`
+`chsh -s /usr/local/bin/fish`
+
+### ZSH
+#### Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

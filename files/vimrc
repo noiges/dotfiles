@@ -48,9 +48,10 @@ set showcmd
 set wildignore+=*~,*/log/*.log,*/tmp/*,*/coverage/*.html,*/.sass-cache/*,public/system/*,public/uploads/*,*/_site/*,*/build/*,*.jpg,*.jpeg,*.gif,*.png,*.pdf,*.mp3,*/node_modules/*,*/vendor/**,*/bin/**
 set belloff=all
 
-" Solarized
+" One Dark
 syntax on
 colorscheme onedark
+let g:onedark_termcolors=16
 
 " Key mappings
 let mapleader = ","
@@ -104,6 +105,3 @@ set timeoutlen=1000 ttimeoutlen=0
 
 " Turn-on jsx highlighting for non-jsx files
 let g:jsx_ext_required = 0
-
-" OneDark color scheme
-let g:onedark_termcolors=16
