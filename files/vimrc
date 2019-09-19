@@ -105,3 +105,5 @@ set timeoutlen=1000 ttimeoutlen=0
 
 " Turn-on jsx highlighting for non-jsx files
 let g:jsx_ext_required = 0
+
+let g:onedark_termcolors=16
