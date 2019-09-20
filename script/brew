@@ -19,4 +19,6 @@ brew install fish
 
 brew install rbenv
 
+brew tap heroku/brew && brew install heroku
+
 brew cleanup
