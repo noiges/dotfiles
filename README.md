@@ -7,14 +7,14 @@ Just my dotfiles.
 ./script/brew
 ```
 
+### Copy dotfiles
+```sh
+cp -Riv files/ ~
+```
+
 ### Set Mac OS X defaults
 ```sh
 ./script/osx
-```
-
-### Symlink dotfiles
-```sh
-./script/symlink
 ```
 
 ### Install vim plugins
@@ -27,7 +27,3 @@ Just my dotfiles.
 ### Fish
 `echo /usr/local/bin/fish | sudo tee -a /etc/shells`
 `chsh -s /usr/local/bin/fish`
-
-### ZSH
-#### Install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
