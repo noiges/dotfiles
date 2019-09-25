@@ -18,7 +18,7 @@ cp -Riv files/ ~
 ```
 
 ### Install vim plugins
-:PlugInstall
+`:PlugInstall`
 
 ### Install OneDark terminal theme
 1. Import ~/.vim/plugged/onedark.vim/term/One\ Dark.terminal into Terminal.app
