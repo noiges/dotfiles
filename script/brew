@@ -18,6 +18,8 @@ brew install fzf
 brew install fish
 
 brew install rbenv
+brew install node
+brew install yarn
 
 brew tap heroku/brew && brew install heroku
 
