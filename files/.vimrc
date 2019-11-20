@@ -108,3 +108,6 @@ set timeoutlen=1000 ttimeoutlen=0
 let g:jsx_ext_required = 0
 
 let g:onedark_termcolors=16
+
+" Effortless ctags
+set tags^=./.git/tags;
