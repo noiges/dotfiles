@@ -72,6 +72,12 @@ silent! map <unique> <leader>b :Buffers<CR>
 silent! map <unique> <leader>l :Lines<CR>
 silent! map <unique> <leader>h :Helptags<CR>
 silent! map <unique> <leader>g :Ag<CR>
+silent! map <unique> <leader>c :Commits<CR>
+silent! map <unique> <leader>C :BCommits<CR>
+silent! map <unique> <leader>e :Commands<CR>
+
+"Make Ag only search file contents
+command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0)
 
 " Gist
 let g:gist_clip_command = 'pbcopy'
